@@ -79,7 +79,8 @@ public class EmployeeServiceImpli implements EmployeeService{
     public Employee save(Employee theEmployee) {
        return employeeJpaRepository.save(theEmployee);
     }
-    
+
+    @Override
     public void deletebyId(int theId){
         employeeJpaRepository.deleteById(theId);
     }
