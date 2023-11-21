@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -39,5 +42,18 @@ public class EmployeeRestController {
         return theEmployee;
     }
 
-    // @GetMapping("/employees/")
+    // add mapping for Post/employees- to add employee
+    @PostMapping("/employees")
+    public Employee addEmployee(@RequestBody Employee theEmployee){
+        theEmployee.setId(0);
+        return employeeService.save(theEmployee);
+    }   
+
+    // add mapping for Put/employees/{employeeId} to update employee
+    @PutMapping("/employees")
+    public Employee updateEmployee(@RequestBody Employee theEmployee){
+        return employeeService.save(theEmployee);
+    }
+
+    // add 
 }
