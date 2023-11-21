@@ -1,12 +1,12 @@
-package com.luv2code.employee_cruddemo.service;
+// package com.luv2code.employee_cruddemo.service;
 
-import java.util.List;
+// import java.util.List;
 
-import com.luv2code.employee_cruddemo.entity.Employee;
+// import com.luv2code.employee_cruddemo.entity.Employee;
 
-public interface EmployeeService {
-    List<Employee> findAll();
-    Employee findById(int theID);
-    Employee save(Employee theEmployee);
-    void deletebyId(int theId);
-}
+// public interface EmployeeService {
+//     List<Employee> findAll();
+//     Employee findById(int theID);
+//     Employee save(Employee theEmployee);
+//     void deletebyId(int theId);
+// }
